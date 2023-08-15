@@ -56,51 +56,30 @@ li{
     margin-right: 1rem;
 
 }
-.CardOne:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-    
-   background-image: url(./img/Cardone.png);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-    color: white;
-    opacity: 90%;
-}
-.CardTwo:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.738);
-    transition: 0.5s;
-    box-shadow: 0 0 10px 0 rgb(0, 0, 0); 
-   background-image: url(./img/CardTwo.png);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-    color: white;
-    opacity: 90%;
-}
-.CardThree:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 0 0 20px rgb(0, 0, 0);
-   background-image: url(./img/CardThree.png);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-    color: white;
-    opacity: 90%;
-}
-.CardFour:hover{
+
+#card:hover{
+    filter: blur(0px);
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 0 0 20px rgb(0, 0, 0); 
-   background-image: url(./img/CardFour.png);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    opacity: 90%;
+  filter: blur(0); 
+
+}
+.CardOne:hover{
+    background-image: url(./img/Cardone.png);
+}
+.CardTwo:hover{
+    background-image: url(./img/CardTwo.png);
+}
+.CardThree:hover{
+    background-image: url(./img/CardThree.png); 
+}
+.CardFour:hover{
+    background-image: url(./img/CardFour.png);
 }
 .NavbarLogo{
     width: 138px;
@@ -113,4 +92,8 @@ li{
 }
 .heading_home{
     padding-bottom: 0.8em;
+}
+
+.container:hover #card:not(:hover){
+    filter: blur(8px); 
 }

@@ -28,10 +28,11 @@ margin : 7rem;
 const Content = styled.div`
 display : flex;
 flex-wrap : wrap;
-margin-bottom : 2rem;
-width : 100%;
+margin : auto ; 
+width : 80%;
 height : 100%;
 justify-content : center;
+
 `
 const Heading = styled.div`
 display : flex;
@@ -48,7 +49,6 @@ width : 32em;
 margin : 2rem;
 background: #1c1c1c;
 color: white;
-opacity: 30%;
 `
 
 const Line = styled.div`
@@ -85,8 +85,8 @@ export default function WhyChooseUs() {
 
             <Line style={{ font: 'large' }}>while threr are countless reasons to turn to greek god factory but the most important includes</Line>
 
-            <Content >
-                <CardContentOne className='CardOne'>
+            <Content  className='container'>
+                <CardContentOne className='CardOne' id='card'>
                     <h3 className='heading_contect_'>01</h3>
 
                     <Para className='paraDisplay'>
@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
                         <p> Stop wasting time with workouts that aren't giving you results. We design a customized fitness program exclusively for you by considering your abilities, preferences, and goals</p>
                     </Para>
                 </CardContentOne>
-                <CardContentOne className='CardTwo'>
+                <CardContentOne className='CardTwo' id='card'>
                     <h3 className='heading_contect_'>02</h3>
                     <Para>
                         <Heading> We're perfect for beginners </Heading>
@@ -104,9 +104,8 @@ export default function WhyChooseUs() {
                     </Para>
                 </CardContentOne>
 
-            </Content>
-            <Content>
-                <CardContentOne className='CardThree'>
+            
+                <CardContentOne className='CardThree' id='card'>
                     <h3 className='heading_contect_'>03</h3>
                     <Para>
                     <Heading>We monitor progress</Heading>
@@ -116,7 +115,7 @@ export default function WhyChooseUs() {
 
                     </Para>
                 </CardContentOne>
-                <CardContentOne className='CardFour'>
+                <CardContentOne className='CardFour' id='card'>
                     <h3 className='heading_contect_'>04</h3>
                     <Para>
                     <Heading>We motivate you</Heading>
@@ -128,6 +127,7 @@ export default function WhyChooseUs() {
                 </CardContentOne>
 
             </Content>
+           
 
 
             <Footer></Footer>
