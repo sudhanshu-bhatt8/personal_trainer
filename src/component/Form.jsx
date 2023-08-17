@@ -71,7 +71,7 @@ export default function Form() {
           <h3>Feel free to get in touch to get your answer</h3>
          
         </Heading>
-        <form>
+        <form action='https://formspree.io/f/mdorejje' method='POST'>
           <FormGroup>
             <Input
               type="text"
